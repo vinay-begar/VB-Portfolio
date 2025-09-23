@@ -1,0 +1,247 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background: #0d0d0d;
+  color: #ddd;
+  line-height: 1.6;
+}
+.navbar {
+  display: flex;
+ justify-content: space-around;
+  padding: 1.2rem 2rem;
+  padding-top: 35px;
+}
+.logo a {
+  background: #333;
+  color: #fff;
+  padding: 0.6rem 0.9rem;
+  border-radius: 50%;
+  font-weight: bold;
+  text-decoration: none;
+}
+.menu-head{
+  display: flex;
+  gap: 1rem;
+}
+.menu-head li {
+  list-style: none;
+}
+.menu-head li:hover {
+  border-bottom: 2px solid crimson;
+}
+
+.menu-head li a {
+  text-decoration: none;
+  color: white;
+}
+/* buttons */
+.btn.small {
+  background: #fff;
+  color: #000;
+  font-weight: bold;
+}
+.btn {
+  text-decoration: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 25px;
+  font-size: 0.9rem;
+  transition: 0.3s;
+}
+/* section */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #111;
+  color: #fff;
+  line-height: 1.6;
+}
+
+/* Dotted Background Pattern */
+ .dotted-bg {
+  background-color: #111;
+  background-image: radial-gradient(#555 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+.about-header {
+  text-align: center;
+  padding: 60px 20px;
+}
+.about-header img{
+  height: 300px;
+  width: 250px;
+}
+#about {
+  padding: 100px 50px;
+  background: #0f0f0f;
+  color: #f5f5f5;
+}
+
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1100px;
+  margin: auto;
+  gap: 50px;
+}
+
+.about-img img {
+  width: 300px;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.4);
+}
+
+.about-text {
+  flex: 1;
+}
+
+.about-text h2 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  color: #ffffff;
+}
+
+.about-text h3 {
+  font-size: 1.4rem;
+  margin-bottom: 20px;
+  font-weight: 500;
+  color: #aaa;
+}
+
+.about-text p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+
+/* footer section */
+/* CTA Section */
+.cta-section {
+  position: relative;
+  padding: 6rem 2rem;
+  text-align: center;
+  background: #000;  /* Black background */
+  color: #fff;
+  overflow: hidden;
+}
+
+/* Dotted background */
+.cta-section .dots {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: radial-gradient(#555 1px, transparent 1px);
+  background-size: 18px 18px;
+  opacity: 0.4;
+  z-index: 0;
+  animation: moveDots 8s linear infinite;
+}
+
+/* Floating dots animation */
+@keyframes moveDots {
+  from { background-position: 0 0; }
+  to { background-position: 40px 40px; }
+}
+
+.cta-content {
+  position: relative;
+  z-index: 1; /* Content always above dots */
+}
+
+.cta-content h2 {
+  font-size: 2.2rem;
+  margin-bottom: 2rem;
+  line-height: 1.3;
+}
+
+.cta-content h2 em {
+  font-style: italic;
+  font-family: serif;
+  color: #ddd;
+}
+
+.cta-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.cta-buttons .btn {
+  padding: 0.8rem 1.5rem;
+  background: #fff;
+  color: #000;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.cta-buttons .btn:hover {
+  background: #444;
+  color: #fff;
+}
+
+.cta-buttons .btn.outline {
+  background: transparent;
+  border: 1px solid #aaa;
+  color: #fff;
+}
+
+.cta-buttons .btn.outline:hover {
+  background: #fff;
+  color: #000;
+}
+
+
+/* Footer */
+.site-footer {
+  background: #000;
+  color: #fff;
+  padding: 2rem 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  font-size: 0.9rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-left a {
+  margin-right: 1.5rem;
+  color: #aaa;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+.footer-left a:hover {
+  color: #fff;
+}
+
+.footer-center {
+  display: flex;
+  gap: 1.2rem;
+}
+.footer-center a {
+  font-size: 1.2rem;
+  color: #aaa;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+.footer-center a:hover {
+  color: #fff;
+  transform: scale(1.2);
+}
+
+.footer-right {
+  font-size: 0.85rem;
+  color: #777;
+}
