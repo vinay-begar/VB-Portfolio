@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: "Inter", sans-serif;
+  font-family:  "Inter";
   background: #0d0d0d;
   color: #ddd;
   line-height: 1.6;
@@ -41,21 +41,25 @@ body {
 }
 /* buttons */
 .btn.small {
+    padding: 0.6rem 1.2rem;
   background: #fff;
   color: #000;
-  font-weight: bold;
-}
-.btn {
-  text-decoration: none;
-  padding: 0.6rem 1.2rem;
   border-radius: 25px;
-  font-size: 0.9rem;
-  transition: 0.3s;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  /* background: #fff;
+  color: #000;
+  font-weight: bold; */
+}
+.nav-right .btn:hover {
+  background: #444;
+  color: #fff;
 }
 /* section */
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: "Inter";
   background: #111;
   color: #fff;
   line-height: 1.6;
@@ -99,7 +103,7 @@ body {
 }
 
 .about-text {
-  flex: 1;
+  flex: 3;
 }
 
 .about-text h2 {
@@ -119,6 +123,20 @@ body {
   font-size: 1rem;
   line-height: 1.6;
   margin-bottom: 15px;
+}
+
+.mouse-magnet {
+  position: fixed; /* stays relative to viewport */
+  top: 0;
+  left: 0;
+  height: 15px;
+  width: 15px;
+  background:whitesmoke;
+  border-radius: 50%;
+  z-index: 9999; /* higher than nav, main, etc */
+  pointer-events: none; /* prevents blocking clicks */
+  transform: translate(-50%, -50%);
+  transition: transform 0.1s ease-out;
 }
 
 

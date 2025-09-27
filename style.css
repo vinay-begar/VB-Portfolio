@@ -4,12 +4,42 @@
   padding: 0;
   box-sizing: border-box;
 }
-
 body {
-  font-family: "Inter", sans-serif;
+   font-family: "Inter";
   background: #0d0d0d;
   color: #ddd;
   line-height: 1.6;
+  cursor: none;
+}
+
+#loading {
+  position: fixed;
+  inset: 0;
+  background: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+/* Font and base letter style */
+.loading-text span {
+  font-family: var(--anton);
+  font-size: 120px;
+  color: rgba(255, 255, 255, 0.1);
+  position: relative;
+  display: inline-block;
+  opacity: 0;
+}
+
+/* Glowing overlay */
+.loading-text span::after {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #1DCD9F;
+  opacity: 0;
 }
 .menu-head{
   display: flex;
@@ -31,16 +61,9 @@ body {
 .navbar {
   display: flex;
  justify-content: space-around;
-  padding:   1.2rem 2rem;
+  padding:   3rem 2rem;
 }
 
-.logo {
-  background: #333;
-  color: #fff;
-  padding: 0.6rem 0.9rem;
-  border-radius: 50%;
-  font-weight: bold;
-}
 
 /* .navbar nav ul {
   list-style: none;
@@ -112,7 +135,7 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 750px;
+  width: 70%;
   height: 450px;
   transform: translate(-50%, -50%);
   background-image: radial-gradient(#444 1px, transparent 1px);
@@ -133,9 +156,11 @@ body {
 } */
 
 .hero h1 {
-  font-size: 2.8rem;
+  font-size: 5rem;
   color: #fff;
   margin-bottom: 1rem;
+  line-height: 1;
+  font-weight: 300;
   position: relative;
 }
 
@@ -157,13 +182,47 @@ body {
   gap: 1rem;
 }
 
+.mouse-magnet {
+  position: fixed; /* stays relative to viewport */
+  top: 0;
+  left: 0;
+  height: 15px;
+  width: 15px;
+  background:whitesmoke;
+  border-radius: 50%;
+  z-index: 9999; /* higher than nav, main, etc */
+  pointer-events: none; /* prevents blocking clicks */
+  transform: translate(-50%, -50%);
+  transition: transform 0.1s ease-out;
+}
+
 .hr{
-  margin-top: 50px;
+  margin-top:20px;
+  opacity: 0.4;
 }
 .learned{
-  height: 80vh;
+  height: 30vh;
 }
 .skills img{
   height: 100px;
   width: 100px;
+  gap: 4rem;
+  
+}
+/* .about-skill{
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+} */
+.self{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.my-skill{
+  font-size: 10px;
+  margin-top: 1rem;
+  opacity: 0.5;
 }

@@ -1,47 +1,28 @@
-//  GSAP animation for About Section
- window.addEventListener("DOMContentLoaded", () => {
-  gsap.from(".about-img img", {
-    x: -120,
-    opacity: 0,
-    duration: 1.9,
-    ease: "power3.out",
-  });
+let magnet = document.querySelector(".mouse-magnet");
 
-  gsap.from(".about-text", {
-    x: 120,
-    opacity: 0,
-    duration: 1.9,
-    ease: "power3.out",
-    delay: 0.8,
-  });
+document.body.addEventListener("mousemove", (e) => {
+  console.log(e.clientX);
+  console.log(e.clientY);
+  const x = e.clientX;
+  const y = e.clientY;
+
+  magnet.style.transform = `translate(${x}px, ${y}px) translate(-50%, -50%)`;
 });
 
-// Register ScrollTrigger plugin
-gsap.registerPlugin(ScrollTrigger);
+//  GSAP animation for About Section
 
-// Image Animation
 gsap.from(".about-img img", {
   x: -120,
   opacity: 0,
-  duration: 1.5,
+  duration: 1,
+  delay: 1,
   ease: "power3.out",
-  scrollTrigger: {
-    trigger: ".about-container",
-    start: "top 80%",   // jab container viewport ke 80% pe aayega
-    toggleActions: "play none none reverse" 
-  }
 });
 
-// Text Animation
 gsap.from(".about-text", {
   x: 120,
   opacity: 0,
-  duration: 1.5,
+  duration: 1,
   ease: "power3.out",
-  delay: 0.2,
-  scrollTrigger: {
-    trigger: ".about-container",
-    start: "top 80%",
-    toggleActions: "play none none reverse"
-  }
+  delay: 1,
 });
