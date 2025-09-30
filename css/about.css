@@ -89,5 +89,31 @@ p.role {
   margin-top: 80px;
   background-color:whitesmoke;
   /* background: var(--dark-black); */
-  margin-left: 3rem;
+  margin-left: 4.5rem;
+}
+/* about Section */
+.self-information {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10rem 8rem;
+}
+.about-info {
+  height: 50vh;
+  max-width: 700px;
+  text-align: center;
+}
+
+.about-info p {
+  margin-bottom: 1.2rem;
+  font-size: 1rem;
+  color: #cccccc;
+}
+.last-line{
+   height: 1px;
+  opacity:0.3;
+  width: 90%;
+  background-color:whitesmoke;
+  margin-left: 4.5rem;
 }
