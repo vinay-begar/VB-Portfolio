@@ -144,17 +144,6 @@ body {
   opacity: 0.9;
   z-index: -1;
 }
-
-/* .hero .badge {
-  background: #222;
-  display: inline-block;
-  padding: 0.4rem 1rem;
-  border-radius: 20px;
-  margin-bottom: 1.5rem;
-  font-size: 0.9rem;
-  color: #f2f2f2;
-} */
-
 .hero h1 {
   font-size: 5rem;
   color: #fff;
