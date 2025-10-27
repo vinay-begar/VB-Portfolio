@@ -82,6 +82,7 @@ p.role {
 }
 
 .line {
+  margin-bottom:50px;
   height: 1px;
   opacity: 0.3;
   width: 90%;
@@ -89,16 +90,56 @@ p.role {
   background-color: whitesmoke;
   margin-left: 4.5rem;
 }
+
+.stack {
+  background-color: var(--body-color);
+  padding-left: 2rem;
+  padding-bottom: 2rem;
+}
+
+.stack h3 {
+  padding: 2rem 0;
+  font-family: var(--Instrument-Serif);
+  font-weight: 500;
+  opacity: 0.4;
+  color: var(--Black);
+}
+
+.marquee {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.svg-icons {
+  display: flex;
+  gap: 3rem;
+  animation: scrollLeft 20s linear infinite;
+  width: max-content;
+}
+
+.svg-icons img {
+  object-fit: contain;
+  filter: grayscale(100%);
+  opacity: 0.6;
+  transition: opacity 0.3s ease;
+}
+.svg-icons img:hover { opacity: .9; }
+
+@keyframes scrollLeft {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
 /* about Section */
-.self-information {
+/* .self-information {
   flex: 1;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 10rem 8rem;
-}
-.about-info {
-  /* height: 50vh; */
+} */
+/* .about-info {
   max-width: 700px;
   text-align: center;
 }
@@ -107,13 +148,14 @@ p.role {
   margin-bottom: 1.2rem;
   font-size: 1rem;
   color: #cccccc;
-}
+} */
 .last-line {
   height: 1px;
   opacity: 0.3;
   width: 90%;
   background-color: whitesmoke;
   margin-left: 4.5rem;
+  margin-top: 50px;
 }
 .Certification h4 {
   text-align: center;
