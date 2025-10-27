@@ -125,10 +125,10 @@ body {
   position: relative;
 }
 
-.hero h1 .italic {
+/* .hero h1 .italic {
   font-style: italic;
   font-family: serif;
-}
+} */
 
 .hero p {
   /* max-width: 600px; */
