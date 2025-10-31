@@ -208,10 +208,10 @@ p.role {
 .dotted-Section{
   text-align: center;
   padding: 60px 20px;
-  padding-bottom: 100px
+ padding-bottom: 100px
 }
 .before-pattern{
-  height:450px;
+  height:350px;
   margin-top: 20%;
   margin-left:50%;
   /* content: "";
@@ -239,4 +239,72 @@ p.role {
   padding: 8px 15px 8px 15px;
   border-radius: 20px;
   margin-top: 20px;
+}
+/* footer section */
+.footer {
+  background: #0d0d0d;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 30px 8%;
+  color: #aaa;
+  font-family: "inter";
+  /* margin-top: 60px; */
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* flex-wrap: wrap; */
+  gap: 20px;
+}
+
+/* LEFT LINKS */
+.footer-left a {
+  color: #aaa;
+  text-decoration: none;
+  margin-right: 25px;
+  font-size: 0.95rem;
+  transition: color 0.3s ease;
+}
+
+.footer-left a:hover {
+  color: #fff;
+}
+
+/* CENTER SOCIAL ICONS */
+.footer-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 23px; /* spacing between icons */
+}
+
+.footer-center a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-center a img {
+  display: block; /* removes inline gap & weird blue dots */
+  width: 22px;
+  height: 22px;
+  filter: brightness(0) invert(1);
+  opacity: 0.8;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.footer-center a:hover img {
+  opacity: 1;
+  transform: translateY(-2px);
+}
+.footer-center a:focus,
+.footer-center a:active {
+  outline: none;
+  box-shadow: none;
+}
+/* RIGHT COPYRIGHT */
+.footer-right p {
+  font-size: 0.9rem;
+  color: #777;
 }
