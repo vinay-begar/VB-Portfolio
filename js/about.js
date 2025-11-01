@@ -1,10 +1,10 @@
 let magnet = document.querySelector(".mouse-magnet");
-let certImg1 = document.querySelector(".cert-img1")
-let certDetails1 = document.querySelector(".cert-details1");
-let certImg2 = document.querySelector(".cert-img2");
-let certDetails2 = document.querySelector(".cert-details2");
-let certLeft = document.querySelector(".cert-left");
-let certRight = document.querySelector(".cert-right");
+// let certImg1 = document.querySelector(".cert-img1")
+// let certDetails1 = document.querySelector(".cert-details1");
+// let certImg2 = document.querySelector(".cert-img2");
+// let certDetails2 = document.querySelector(".cert-details2");
+// let certLeft = document.querySelector(".cert-left");
+// let certRight = document.querySelector(".cert-right");
 
 
 
@@ -18,20 +18,20 @@ let certRight = document.querySelector(".cert-right");
 // });
 
 
-certLeft.addEventListener("mouseenter", () => {
-  certImg1.style.display = "block";
-  certDetails1.style.display = "none";
-});
-certLeft.addEventListener("mouseleave", () => {
-  certImg1.style.display = "none";
-  certDetails1.style.display = "flex";
-});
+// certLeft.addEventListener("mouseenter", () => {
+//   certImg1.style.display = "block";
+//   certDetails1.style.display = "none";
+// });
+// certLeft.addEventListener("mouseleave", () => {
+//   certImg1.style.display = "none";
+//   certDetails1.style.display = "flex";
+// });
 
-certRight.addEventListener("mouseenter", () => {  
-  certImg2.style.display = "block";
-  certDetails2.style.display = "none";
-});
-certRight.addEventListener("mouseleave", () => {
-  certImg2.style.display = "none";
-  certDetails2.style.display = "flex";
-});
+// certRight.addEventListener("mouseenter", () => {  
+//   certImg2.style.display = "block";
+//   certDetails2.style.display = "none";
+// });
+// certRight.addEventListener("mouseleave", () => {
+//   certImg2.style.display = "none";
+//   certDetails2.style.display = "flex";
+// });

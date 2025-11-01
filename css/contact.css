@@ -36,6 +36,13 @@ body {
   justify-content: space-around;
   padding: 3rem 2rem;
 }
+.heading{
+  text-decoration: none;
+  /* background: #fff; */
+  color:#fff;
+  font-size: 1.5rem;
+  font-family: "Instrument Serif", serif;
+}
 /* Buttons */
 .btn {
   text-decoration: none;
@@ -250,17 +257,12 @@ body {
 }
 
 /* LEFT LINKS */
-.footer-left a {
-  color: #aaa;
-  text-decoration: none;
-  margin-right: 25px;
-  font-size: 0.95rem;
-  transition: color 0.3s ease;
+.footer-left p{
+   font-size: 0.9rem;
+  color: #777;
 }
 
-.footer-left a:hover {
-  color: #fff;
-}
+
 
 /* CENTER SOCIAL ICONS */
 .footer-center {
