@@ -170,6 +170,11 @@ body {
   border-radius: 10px;
   border: none;
 }
+
+.contact-form textarea{
+  border-radius: 10px;
+}
+
 .top h1{
    font-family: "inter";
    font-weight: 400;
@@ -186,6 +191,7 @@ body {
   border-radius: 20px;
   border: none;
   margin-top: 10px;
+  cursor: pointer;
 }
 /* footer */
 

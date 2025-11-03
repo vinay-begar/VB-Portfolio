@@ -15,11 +15,12 @@ document.body.addEventListener("mousemove", (e) => {
  
 const letters = document.querySelectorAll(".loading-text span");
 
+
 gsap.to(letters, {
   opacity: 1,
   duration: 1.2,
   stagger: 0.15,
-  
+
   onUpdate: function () {
     letters.forEach((el, i) => {
       gsap.to(el, {
@@ -28,7 +29,6 @@ gsap.to(letters, {
         delay: i * 0.15,
       });
       gsap.to(el, {
-
         color: "rgba(255,255,255,0.1)",
         duration: 0.2,
         delay: i * 0.15 + 0.4,
@@ -40,6 +40,17 @@ gsap.to(letters, {
       });
     });
   },
+  // onComplete: () => {
+  //   gsap.to("#loading", {
+  //     opacity: 0,
+  //     duration: 1,
+  //     onComplete: () => {
+  //       document.getElementById("loading").style.display = "none";
+
+  //     },
+  //   });
+
+  // },
   onComplete: () => {
     gsap.to("#loading", {
       opacity: 0,
@@ -47,12 +58,18 @@ gsap.to(letters, {
       onComplete: () => {
         document.getElementById("loading").style.display = "none";
 
+        // After splash completes, show the hamburger on small screens
+        const hamburger = document.getElementById("hamburger");
+        if (window.innerWidth <= 480) {
+          hamburger.classList.add("show");
+        }
       },
     });
   },
 });
 
 // Responsive menu toggle
+
 
 hamburger.addEventListener("click", () => {
   hamburger.classList.toggle("active");

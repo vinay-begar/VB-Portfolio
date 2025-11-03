@@ -60,10 +60,10 @@ body {
 .about-container::before {
   content: "";
   position: absolute;
-  top: 50%;
+  top: 60%;
   left: 50%;
   width: 70%;
-  height: 450px;
+  height: 560px;
   transform: translate(-50%, -50%);
   background-image: radial-gradient(#444 1px, transparent 1px);
   background-size: 20px 20px;
@@ -72,13 +72,18 @@ body {
 }
 .about-container {
   text-align: center;
-  padding: 60px 20px;
+  padding: 40px 10px;
   padding-bottom: 100px;
-}
+  display: flex;
+  /* justify-content: center; */
+  flex-direction: column;
+  align-items: center;
 
+}
 .profile-img {
-  height: 250px;
-  width: 250px;
+  height: 400px;
+  /* width: %; */
+  object-fit: contain;
 }
 h1 {
   font-size: 2.5rem;
@@ -92,7 +97,31 @@ p.role {
   font-size: 1.5rem;
   color: #494747;
 }
+/* about content */
 
+.about-me {
+  position: relative;
+  padding: 80px 10%;
+  color: #ddd;
+  font-family: "Inter", sans-serif;
+  background: #0d0d0d; /* solid dark background */
+  text-align: center;
+}
+
+.about-me h2 {
+  font-family: "Instrument Serif", serif;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #fff;
+}
+
+.about-me p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  max-width: 750px;
+  margin: 0 auto 20px;
+  color: #ccc;
+}
 .line {
   margin-bottom:50px;
   height: 1px;
@@ -126,7 +155,7 @@ p.role {
 .svg-icons {
   display: flex;
   gap: 3rem;
-  animation: scrollLeft 5s linear infinite;
+  animation: scrollLeft 9s linear infinite;
   width: max-content;
 }
 
@@ -271,6 +300,7 @@ p.role {
 .after-button h2{
   font-size: 1rem;
   line-height: 20px;
+  padding: 0.3rem 0.7rem;
 }
 .mob-reach-out{
     font-size: 1rem !important;
