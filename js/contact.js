@@ -1,4 +1,3 @@
-// const workItems = document.querySelectorAll(".work-item");
 const hamburger = document.getElementById("hamburger");
 const navMenu = document.getElementById("nav-menu");
 

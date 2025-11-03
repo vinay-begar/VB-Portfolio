@@ -1,4 +1,6 @@
 let magnet = document.querySelector(".mouse-magnet");
+const hamburger = document.getElementById("hamburger");
+const navMenu = document.getElementById("nav-menu");
 // let certImg1 = document.querySelector(".cert-img1")
 // let certDetails1 = document.querySelector(".cert-details1");
 // let certImg2 = document.querySelector(".cert-img2");
@@ -35,3 +37,17 @@ let magnet = document.querySelector(".mouse-magnet");
 //   certImg2.style.display = "none";
 //   certDetails2.style.display = "flex";
 // });
+// Responsive menu toggle
+
+hamburger.addEventListener('click', () => {
+  hamburger.classList.toggle('active');
+  navMenu.classList.toggle('active');
+});
+
+// Close menu when a link is clicked
+document.querySelectorAll('.menu-head a').forEach(link => {
+  link.addEventListener('click', () => {
+    hamburger.classList.remove('active');
+    navMenu.classList.remove('active');
+  });
+});

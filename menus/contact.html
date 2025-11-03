@@ -4,22 +4,30 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     <link
       href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="/css/contact.css" />
+    <script src="/js/contact.js" defer></script>
   </head>
   <body>
     <header class="navbar">
       <div class="logo">
-        <a href="/menus/contact.html" class="heading">Vinay B.</a>
+        <a href="/index.html" class="heading">Vinay B.</a>
       </div>
-      <div class="menu">
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="menu" id="nav-menu">
         <ul class="menu-head">
           <li><a href="/index.html">Home</a></li>
           <li><a href="/menus/about.html">About</a></li>
           <li><a href="/menus/work.html">Work</a></li>
+           <li class="mobile-btn"><a href="/menus/contact.html" class="btn small mob-reach-out">Reach out →</a></li>
           <!-- <li><a href="./menus/contact.html">Contact</a></li> -->
         </ul>
       </div>
@@ -32,61 +40,72 @@
       <h1>Get in Touch</h1>
     </section>
     <!-- <hr class="hr" style="margin-top: 100px;"> -->
-     <div class="line"></div>
+    <div class="line"></div>
     <div class="contact">
       <div class="contact-in">
         <div class="left">
-        <!-- <img src="/images/mountain-img.jpg" alt="" style="height: 400px;"> -->
+          <!-- <img src="/images/mountain-img.jpg" alt="" style="height: 400px;"> -->
+        </div>
+        <div class="right">
+          <div class="right-info">
+            <div class="top">
+              <h1>Contact Me</h1>
+              <p>
+                For Any Work Related Inqueries You Can Reach Out To Me And Send
+                The Details Below
+              </p>
+            </div>
+            <form class="contact-form">
+              <label>Name*</label>
+              <input type="text" placeholder=" " required />
+            </form>
+            <form class="contact-form">
+              <label>Email*</label>
+              <input type="text" placeholder=" " required />
+            </form>
+            <form class="contact-form">
+            <label> Message*</label>
+            <input type="text" placeholder=" " required />
+          </form>
+          <button class="bt">Send a Message</button>
+          </div>
+        </div>
       </div>
-      <div class="right">
-        <form class="contact-form">
-           <label>Name</label>
-        <input type="text" placeholder=" " required />
-        </form>
-      </div>
-      </div>
-      
     </div>
-
-    <!-- <section class="contact-section">
-      <h2>Send me a message using this form below</h2>
-
-      <form class="contact-form">
-        <label>Name</label>
-        <input type="text" placeholder=" " required />
-
-        <label>Email</label>
-        <input type="email" placeholder=" " required />
-
-        <label>Message</label>
-        <textarea placeholder="Your inquiry here..." required></textarea>
-
-        <button type="submit">Send message</button>
-      </form> -->
     <!-- footer section -->
-      <footer class="footer">
-  <div class="footer-container">
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-left">
+          <p>Desgined and developed by Vinay B.</p>
+        </div>
 
-    <div class="footer-left">
-      <p>Desgined and developed by Vinay B.</p>
-    </div>
-
-    <div class="footer-center">
-      <a href="https://github.com/vinay-begar" aria-label="GitHub">
-        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/github.svg" alt="GitHub" />
-      </a>
-      <a href="https://www.linkedin.com/in/vinay-begar/" aria-label="LinkedIn">
-        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg" alt="LinkedIn" />
-      </a>
-      <a href="#" aria-label="Twitter">
-        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/x.svg" alt="Twitter" />
-      </a>
-    </div>
-    <div class="footer-right">
-      <p>© 2025 Vinay B. — All Rights Reserved.</p>
-    </div>
-
-  </div>
-</footer>
+        <div class="footer-center">
+          <a href="https://github.com/vinay-begar" aria-label="GitHub">
+            <img
+              src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/github.svg"
+              alt="GitHub"
+            />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/vinay-begar/"
+            aria-label="LinkedIn"
+          >
+            <img
+              src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg"
+              alt="LinkedIn"
+            />
+          </a>
+          <a href="#" aria-label="Twitter">
+            <img
+              src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/x.svg"
+              alt="Twitter"
+            />
+          </a>
+        </div>
+        <div class="footer-right">
+          <p>© 2025 Vinay B. — All Rights Reserved.</p>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

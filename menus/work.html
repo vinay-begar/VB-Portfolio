@@ -15,18 +15,24 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="/css/work.css" />
-    <script src="/js/work.js"></script>
+    <script src="/js/work.js" defer></script>
   </head>
   <body>
     <header class="navbar">
       <div class="logo">
-        <a href="/menus/contact.html" class="heading">Vinay B.</a>
+        <a href="/index.html" class="heading">Vinay B.</a>
       </div>
-      <div class="menu">
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="menu" id="nav-menu">
         <ul class="menu-head">
           <li><a href="/index.html">Home</a></li>
           <li><a href="/menus/about.html">About</a></li>
           <li><a href="./menus/work.html">Work</a></li>
+           <li class="mobile-btn"><a href="/menus/contact.html" class="btn small mob-reach-out">Reach out →</a></li>
           <!-- <li><a href="./menus/contact.html">Contact</a></li> -->
         </ul>
       </div>
@@ -60,11 +66,11 @@
 
         <div class="project-card">
           <div class="project-image">
-            <img src="/project-images/job-listing.jpg" alt="Project Image" />
+            <img style="height: 320px; width: 400px;" src="/project-images/Guess my number img.png" alt="Project Image" />
             <div class="image-fade"></div>
           </div>
           <div class="project-details">
-            <h3 class="project-title">Portfolio Website</h3>
+            <h3 class="project-title">Guess My Number !</h3>
             <p class="project-role">Frontend Developer</p>
             <div class="tech-stack">
               <span class="tech">Github</span>
@@ -75,11 +81,11 @@
 
         <div class="project-card">
           <div class="project-image">
-            <img src="/project-images/job-listing.jpg" alt="Project Image" />
+            <img style="height: 320px;" src="/project-images/job-listing.jpg" alt="Project Image" />
             <div class="image-fade"></div>
           </div>
           <div class="project-details">
-            <h3 class="project-title">Dashboard UI</h3>
+            <h3 class="project-title">Static Job Listing</h3>
             <p class="project-role">UI/UX Designer</p>
             <div class="tech-stack">
               <span class="tech">Github</span>
