@@ -319,6 +319,9 @@ body {
 
 /* Mobile (≤480px) */
 @media (max-width: 480px) {
+   body{
+    height: 100vh;
+  }
   .navbar {
     justify-content: space-between;
     padding: 1.2rem 1.5rem;
@@ -402,5 +405,97 @@ body {
   .footer-left p,
   .footer-right p {
     font-size: 0.8rem;
+  }
+}
+
+
+@media (max-width: 380px) {
+  body{
+    height: 100vh;
+  }
+  .navbar {
+    justify-content: space-between;
+    padding: 1rem 1.2rem;
+  }
+
+  .menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    height: 100%;
+    width: 75%;
+    background: #0d0d0d;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: right 0.4s ease;
+    z-index: 999;
+  }
+
+  .menu.active {
+    right: 0;
+  }
+
+  .menu-head {
+    flex-direction: column;
+    gap: 1.8rem;
+    text-align: center;
+  }
+
+  .nav-right {
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 24px;
+    height: 18px;
+    cursor: pointer;
+    z-index: 10000; 
+  }
+
+  .mob-reach-out {
+    font-size: 0.95rem !important;
+  }
+
+  .menu-head li a {
+    font-size: 1.2rem;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+    line-height: 1.2;
+  }
+
+  .hero p {
+    font-size: 0.75rem;
+    text-align: center;
+  }
+
+  .br {
+    display: none;
+  }
+
+  .mobile-btn {
+    display: flex;
+    justify-content: center;
+  }
+
+  .buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+
+  .footer-left p,
+  .footer-right p {
+    font-size: 0.75rem;
   }
 }

@@ -50,7 +50,7 @@ body {
   font-weight: bold;
 }
 /* Hide mobile reach-out button on desktop */
-@media screen and (min-width: 769px) {
+@media screen and (max-width: 1920px) {
   .mobile-btn {
     display: none;
   }
@@ -398,6 +398,9 @@ p.role {
     justify-content: space-between;
     padding: 1.2rem 1.5rem;
   }
+   .mob-reach-out {
+    font-size: 0.95rem !important;
+  }
 
   .menu {
     position: fixed;
@@ -422,6 +425,10 @@ p.role {
     flex-direction: column;
     gap: 2rem;
     text-align: center;
+  }
+  .mobile-btn {
+    display: flex;
+    justify-content: center;
   }
 
   .nav-right {
@@ -465,3 +472,11 @@ p.role {
     font-size: 0.8rem;
   }
 } 
+
+@media (max-width: 380px){
+.Certification h4 {
+  text-align: center;
+  font-size: 3rem;
+  /* margin-right: 60px; */
+}
+}
