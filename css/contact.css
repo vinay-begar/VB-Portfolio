@@ -161,7 +161,7 @@ body {
   gap: 20px;
   /* text-align: center; */
 }
-.contact-form{
+/* .contact-form{
   display: flex;
   flex-direction: column;
 }
@@ -173,7 +173,48 @@ body {
 
 .contact-form textarea{
   border-radius: 10px;
+} */
+
+
+.contact-form {
+  /* flex: 1; */
+  /* min-width: 300px; */
+  /* background: #fff; */
+  /* margin-top: 2rem ; */
+  /* padding: 2rem; */
+  border-radius: 12px;
+  /* box-shadow: 10px 10px 10px 10px rgb(233, 230, 230); */
 }
+
+.contact-form form input,
+.contact-form form select,
+.contact-form form textarea {
+  width: 100%;
+  padding: 12px 15px;
+  margin-bottom: 20px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: var(--Poppins);
+}
+
+.contact-form form textarea {
+  resize: vertical;
+}
+
+.contact-form form button {
+   width: 40%;
+  padding: 8px 15px 8px 15px;
+  border-radius: 20px;
+  border: none;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.contact-form form button:hover {
+  background-color: rgb(211, 207, 207);
+}
+
 
 .top h1{
    font-family: "inter";

@@ -3,8 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <meta
+      name="description"
+      content="Get in touch with Vinay Begar for collaborations, freelance opportunities, or professional inquiries. Let's create something amazing together."
+    />
+    <meta
+      name="keywords"
+      content="contact, connect, hire Vinay Begar, collaboration, freelance, inquiries"
+    />
+    <link rel="icon" type="image/x-icon" href="../images/vinay-3img.jpeg" />
+
+    <title>Contact|Vinay Begar</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
     <link
       href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap"
       rel="stylesheet"
@@ -27,7 +40,11 @@
           <li><a href="../index.html">Home</a></li>
           <li><a href="./about.html">About</a></li>
           <li><a href="./work.html">Work</a></li>
-           <li class="mobile-btn"><a href="./contact.html" class="btn small mob-reach-out">Reach out →</a></li>
+          <li class="mobile-btn">
+            <a href="./contact.html" class="btn small mob-reach-out"
+              >Reach out →</a
+            >
+          </li>
           <!-- <li><a href="./menus/contact.html">Contact</a></li> -->
         </ul>
       </div>
@@ -55,20 +72,35 @@
                 The Details Below
               </p>
             </div>
-            <form class="contact-form">
-              <label>Name*</label>
-              <input type="text" placeholder=" " required />
-            </form>
-            <form class="contact-form">
-              <label>Email*</label>
-              <input type="text" placeholder=" " required />
-            </form>
-            <form class="contact-form">
-            <label> Message*</label>
-            <!-- <input type="text" placeholder=" " required /> -->
-             <textarea name="" id="" rows="4"></textarea>
-          </form>
-          <button class="bt">Send a Message</button>
+            <div class="contact-form">
+              <form id="contactForm">
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  placeholder="Name"
+                  required
+                />
+
+                <input
+                  id="email"
+                  type="email"
+                  name="email"
+                  placeholder="Email"
+                  required
+                />
+
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="4"
+                  placeholder="Message"
+                  required
+                ></textarea>
+                <button type="submit">Send a Message</button>
+              </form>
+            </div>
+            <!-- <button class="bt">Send a Message</button> -->
           </div>
         </div>
       </div>
